@@ -12,8 +12,16 @@ class Doctores extends CI_Controller {
     public function index(){
         $data['doctores'] = $this->doctores_model->doctores_list();
         $data['title'] = 'Lista de doctores ';
- 
-        $this->load->view('doctores/list', $data);
+        $data['contenido'] = 'contenedorprincipal';
+      // $this->load->view('doctores/list', $data);
+      $this->load->view('principal', $data);
+    }
+    public function showtables(){
+        $data['doctores'] = $this->doctores_model->doctores_list();
+        $data['title'] = 'Lista de doctores ';
+        $data['contenido'] = 'tablas';
+      // $this->load->view('doctores/list', $data);
+      $this->load->view('principal', $data);
     }
 
     public function create(){
