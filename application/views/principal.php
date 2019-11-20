@@ -126,7 +126,7 @@
           <ul class="list-unstyled">
             <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
             <li><a href="<?=base_url()?>doctores/showtables"> <i class="icon-grid"></i>Tables </a></li>
-            <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
+            <li><a href="<?=base_url()?>doctores/list"> <i class="fa fa-bar-chart"></i>Doctores </a></li>
             <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
             <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">

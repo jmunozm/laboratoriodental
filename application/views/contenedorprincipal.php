@@ -1,4 +1,4 @@
-<div class="content-inner">
+      <div class="content-inner">
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
@@ -26,7 +26,7 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          
                           <div class="title">
                             <h5>Lorem ipsum dolor sit amet.</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>

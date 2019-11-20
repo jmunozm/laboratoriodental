@@ -24,6 +24,14 @@ class Doctores extends CI_Controller {
       $this->load->view('principal', $data);
     }
 
+    public function list(){
+        $data['doctores'] = $this->doctores_model->doctores_list();
+        $data['title'] = 'Lista de doctores ';
+        $data['contenido'] = 'doctores/list';
+        //$this->load->view('doctores/list', $data);
+        $this->load->view('principal', $data);
+    }
+
     public function create(){
         $data['title'] = 'Alta de Doctor';
         $this->load->view('doctores/create', $data);
@@ -58,7 +66,7 @@ class Doctores extends CI_Controller {
             }
         }else{ 
             $data['doctor'] = $this->doctores_model->createOrUpdate();
-            redirect( base_url('doctores') ); 
+            redirect( base_url('doctores/list') ); 
         }  
     }
 
@@ -71,6 +79,6 @@ class Doctores extends CI_Controller {
                  
         $doctores = $this->doctores_model->delete($id);
          
-        redirect( base_url('doctores') );        
+        redirect( base_url('doctores/list') );        
     }
 }
